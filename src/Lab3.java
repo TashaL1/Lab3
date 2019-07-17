@@ -21,17 +21,15 @@ public class Lab3 {
 
 				// this is an odd number
 			}
-			if (num1 % 2 != 0 ) {
+			if (num1 % 2 != 0 && num1 < 60) {
 				System.out.println(userName + " you entered " + num1 + ", which is an odd number.");
-			}
-
-			if (num1 >= 2 && num1 <= 25 && num1 % 2 == 0) {
+			}else if (num1 >= 2 && num1 <= 25 && num1 % 2 == 0) {
 				System.out.println(userName + " you entered " + num1 + ", which is even and less than 25.");
 			} else if (num1 >= 26 && num1 <= 60 && num1 % 2 == 0) {
 				System.out.println(userName + " you entered " + num1 + ", which is even.");
 			} else if (num1 > 60 && num1 % 2 == 0) {
 				System.out.println(userName + " you entered " + num1 + ", which is even.");
-			} else if (num1 > 60 && num1 % 2 != 0) {
+			} else if (num1 % 2 != 0 && num1 > 60) {
 				System.out.println(userName + " you entered " + num1 + ", which is odd and over 60.");
 
 			}
